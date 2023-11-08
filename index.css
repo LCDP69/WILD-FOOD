@@ -1,73 +1,117 @@
-/* /* 
-*  html5resetcss
-*/
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-ins{background-color:#ff9;color:#000;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Radley&display=swap');
+
 
 :root {
- --primaryfont: 'Radley', serif;
- --dark-color: #000000;
- --medium-color: #D9D9D9;
- --light-color:  #f5f5f5;
-}
+   --dark-color: #000000;
+   --medium-color: #D9D9D9;
+   --light-color:  #f5f5f5;
+  }
 
-nav {
-    color: var(--dark-color);
-   background: var(--medium-color);
-   display: flex;
-   gap: 100px;
- 
-}
-
-.logo img {
-    height: 70px;
-    align-content: center; 
-    padding: 2px;
-}
-
-.title h1 {
-font-size: 28px;
+*{
+font-family: "radley", sans-serif;
+margin: 0;
+box-sizing: border-box;
 color: var(--dark-color);
-margin-top: 25px;
 }
 
-.linknav li{
-    color: var(--dark-color);
-    font-size: 20px; 
-    display: inline;   
-    padding: 20px;
-    text-decoration: none;
-     }
+li{
+   list-style: none;
+}
 
-     ul {
-        margin-top: 28px;
-     }
+p{
+   font-size: 0.8rem;
+}
 
-     li {
-        text-decoration: none;
-     }
+body {
+   min-height: 100vh;
+   background: var(--light-color;)
+}
 
-     header {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        text-align: center;
-        font-size: 80px;
-        text-shadow: 2px 1px 9px black;
-        color: var(--medium-color)
-     }
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background: var(--medium-color);
+}
 
-     .homepic img {
-        width: 100%;
-     }
+.logoandtitle {
+   align-items: center;
+   display: flex;
+}
+
+.logoandtitle img {
+   height: 70px;
+}
+.logoandtitle h1 {
+   margin-left: 20px;
+}
+
+.linknav {
+   justify-content: space-between;
+}
+
+.linknav ul {
+   display: flex;
+   justify-content: space-between;
+   margin-inline-end: 20px;
+   gap: 50px;
+   margin-right: 50px;
+
+}
+
+.linknav li {
+   letter-spacing: 2px;
+   font-weight: bold;
+}
+
+.linknav a{
+   text-decoration: none;
+   color: var(--dark-color);
+   justify-content: space-between;
+}
+
+header {
+   background-size: cover;
+   background-image: url(./img/bar-498420_1280.jpg);
+   text-align: center;
+   min-height: 900px;
+   padding: 360px;
+   font-size: 60px;
+   color:rgb(255, 255, 255);
+   font-style: italic;
+   box-shadow: 0px -4px 20px 0px black;
+}
+
+.threepicspage1 {
+   display: flex;
+   justify-content: space-around;
+   margin: 30px 50px;
+}
+
+.leftpic img { 
+   display: flex;
+   justify-content: center;
+   height: 434px;
+   width: 357px;
+}
+
+.middlepic img{
+   display: flex;
+   justify-content: center;
+   height: 434px;
+   width: 357px;
+}
+
+.rightpic img{
+   display: flex;
+   justify-content: center;
+   height: 434px;
+   width: 357px;
+}
+
+
+
+
+
+
