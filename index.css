@@ -86,32 +86,146 @@ header {
 .threepicspage1 {
    display: flex;
    justify-content: space-around;
-   margin: 30px 50px;
+   margin-top: 100px;
 }
 
 .leftpic img { 
    display: flex;
    justify-content: center;
    height: 434px;
-   width: 357px;
+   width: 400px;
+   object-fit: cover;
 }
 
 .middlepic img{
    display: flex;
    justify-content: center;
    height: 434px;
-   width: 357px;
+   width: 400px;
+   object-fit: cover;
 }
 
 .rightpic img{
    display: flex;
    justify-content: center;
    height: 434px;
-   width: 357px;
+   width: 400px;
+   object-fit: cover;
+}
+
+.underpicspage1 {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+}
+
+.underpicspage1 .p1 p{
+  display: flex;
+   font-size: 1.5rem;
+   margin-top: 10px;
+
+}
+
+.underpicspage1 .p2 p {
+   display: flex;
+   font-size: 1.5rem;
+   margin-top: 10px;
+}
+
+.underpicspage1 .p3 p {
+   display: flex;
+   font-size: 1.5rem;
+   margin-top: 10px;
+}
+
+.flexboxpage1 ul{
+   display: flex;
+   justify-content: space-around;
+   margin: 30px; 
+}
+
+.flexboxpage1 li {
+   border: none;
+   background: var(--medium-color);
+   padding: 15px;
+   font-family: "radley";
+   color: rgb(128, 15, 15);
+}
+
+.underboxpage1 {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.underboxpage1 .p1 p {
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+.underboxpage1 .p2 p {
+   font-size: 1.2rem;
+   text-align: center
+}
+
+.underboxpage1 .p3 p {
+   font-size: 1.2rem;
+}
+
+.lunch {
+   margin-top: 6%;
+   display: flex;
+   justify-content: space-around;
+   margin: 100px auto;
+}
+
+.lunchtext {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+}
+
+.lunchtext h3 {
+   font-size: 40px;
+}
+
+.lunchtext p {
+   font-size: 20px;
+}
+
+.lunchvid {
+   width: 50%;
+}
+
+.diner {
+   display: flex;
+   justify-content: space-around;
+   margin: 100px auto;
 }
 
 
+.dinervid {
+   display: flex;
+   width: 50%;
+}
 
+.dinertext {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+}
+
+.dinertext h3 {
+   font-size: 40px;
+}
+
+.dinertext p {
+   font-size: 20px;
+}
 
 
 
