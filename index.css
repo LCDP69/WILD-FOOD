@@ -4,30 +4,28 @@
 :root {
    --dark-color: #000000;
    --medium-color: #D9D9D9;
-   --light-color:  #f5f5f5;
-  }
-
-*{
-font-family: "radley", sans-serif;
-margin: 0;
-box-sizing: border-box;
-color: var(--dark-color);
+   --light-color: #f5f5f5;
 }
 
-li{
+* {
+   font-family: "radley", sans-serif;
+   margin: 0;
+   box-sizing: border-box;
+   color: var(--dark-color);
+}
+
+li {
    list-style: none;
 }
 
-p{
-   font-size: 0.8rem;
-}
+
 
 body {
    min-height: 100vh;
-   background: var(--light-color;)
+   background: var(--light-color)
 }
 
-nav{
+nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -43,6 +41,7 @@ nav{
 .logoandtitle img {
    height: 70px;
 }
+
 .logoandtitle h1 {
    margin-left: 20px;
 }
@@ -65,7 +64,7 @@ nav{
    font-weight: bold;
 }
 
-.linknav a{
+.linknav a {
    text-decoration: none;
    color: var(--dark-color);
    justify-content: space-between;
@@ -77,8 +76,9 @@ header {
    text-align: center;
    min-height: 900px;
    padding: 360px;
+   margin-bottom: 100px;
    font-size: 60px;
-   color:rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
    font-style: italic;
    box-shadow: 0px -4px 20px 0px black;
 }
@@ -86,62 +86,38 @@ header {
 .threepicspage1 {
    display: flex;
    justify-content: space-around;
-   margin-top: 100px;
+   flex-wrap: wrap;
+   gap: 40px;
+   margin-bottom: 10px;
+   text-align: center;
+   font-family: 'Radley', serif;
+   line-height: 1.7;
+   font-size: 1.2rem;
 }
 
-.leftpic img { 
-   display: flex;
-   justify-content: center;
-   height: 434px;
+.leftpic img,
+.middlepic img,
+.rightpic img {
    width: 400px;
+   height: 400px;
    object-fit: cover;
 }
 
-.middlepic img{
-   display: flex;
-   justify-content: center;
-   height: 434px;
+.leftpic div,
+.middlepic div,
+.rightpic div {
    width: 400px;
-   object-fit: cover;
 }
 
-.rightpic img{
-   display: flex;
-   justify-content: center;
-   height: 434px;
-   width: 400px;
-   object-fit: cover;
+video {
+   width: 600px;
+   height: 300px;
 }
 
-.underpicspage1 {
+.flexboxpage1 ul {
    display: flex;
    justify-content: space-around;
-   margin-top: 20px;
-}
-
-.underpicspage1 .p1 p{
-  display: flex;
-   font-size: 1.5rem;
-   margin-top: 10px;
-
-}
-
-.underpicspage1 .p2 p {
-   display: flex;
-   font-size: 1.5rem;
-   margin-top: 10px;
-}
-
-.underpicspage1 .p3 p {
-   display: flex;
-   font-size: 1.5rem;
-   margin-top: 10px;
-}
-
-.flexboxpage1 ul{
-   display: flex;
-   justify-content: space-around;
-   margin: 30px; 
+   margin: 30px;
 }
 
 .flexboxpage1 li {
@@ -173,10 +149,12 @@ header {
 }
 
 .lunch {
-   margin-top: 6%;
    display: flex;
-   justify-content: space-around;
-   margin: 100px auto;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   gap: 50px;
+
 }
 
 .lunchtext {
@@ -184,7 +162,8 @@ header {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 50%;
+   line-height: 1.8;
+   text-align: center;
 }
 
 .lunchtext h3 {
@@ -226,6 +205,3 @@ header {
 .dinertext p {
    font-size: 20px;
 }
-
-
-
