@@ -31,6 +31,9 @@ nav {
    align-items: center;
    padding: 10px 20px;
    background: var(--medium-color);
+   position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logoandtitle {
@@ -76,11 +79,12 @@ header {
    text-align: center;
    min-height: 900px;
    padding: 360px;
-   margin-bottom: 100px;
+   margin-bottom: 200px;
    font-size: 60px;
    color: rgb(255, 255, 255);
    font-style: italic;
    box-shadow: 0px -4px 20px 0px black;
+   text-shadow: 0 0 20px black;
 }
 
 .threepicspage1 {
@@ -88,7 +92,7 @@ header {
    justify-content: space-around;
    flex-wrap: wrap;
    gap: 40px;
-   margin-bottom: 10px;
+   margin-bottom: 80px;
    text-align: center;
    font-family: 'Radley', serif;
    line-height: 1.7;
@@ -107,25 +111,6 @@ header {
 .middlepic div,
 .rightpic div {
    width: 400px;
-}
-
-video {
-   width: 600px;
-   height: 300px;
-}
-
-.flexboxpage1 ul {
-   display: flex;
-   justify-content: space-around;
-   margin: 30px;
-}
-
-.flexboxpage1 li {
-   border: none;
-   background: var(--medium-color);
-   padding: 15px;
-   font-family: "radley";
-   color: rgb(128, 15, 15);
 }
 
 .underboxpage1 {
@@ -153,8 +138,13 @@ video {
    justify-content: center;
    flex-wrap: wrap;
    flex-direction: row-reverse;
-   gap: 50px;
+   gap: 300px;
+   margin-bottom: 90px;
+}
 
+.lunch video {
+   width: 800px;
+   height: 600px;
 }
 
 .lunchtext {
@@ -170,38 +160,103 @@ video {
    font-size: 40px;
 }
 
-.lunchtext p {
+.lunchtext ul {
    font-size: 20px;
-}
-
-.lunchvid {
-   width: 50%;
 }
 
 .diner {
    display: flex;
-   justify-content: space-around;
-   margin: 100px auto;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 300px;
+   margin-bottom: 150px;
+
 }
 
-
-.dinervid {
-   display: flex;
-   width: 50%;
+.diner video {
+   width: 800px;
+   height: 600px;
 }
 
 .dinertext {
    display: flex;
    flex-direction: column;
-   align-items: center;
    justify-content: center;
-   width: 50%;
+   line-height: 1.8;
+   text-align: center;
 }
 
 .dinertext h3 {
    font-size: 40px;
 }
 
-.dinertext p {
+.dinertext ul {
    font-size: 20px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.brunch {
+   display: flex;
+   justify-content: center;
+}
+
+.brunch {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   background-image: url(./img/pexels-micheilecom-__-visual-stories-8366815.jpg);
+   background-size: cover;
+   height: 760px;
+   width: 1350px;
+   margin: 0 auto;
+   font-size: 40px;
+   padding-top: 250px;
+   margin-bottom: 140px;
+}
+
+.brunchtext h3 {
+color: rgb(255 103 50);
+background: #ffffffba;
+}
+
+.brunchtext p {
+   color: rgb(255 103 50);
+   background: #ffffffba;
+   }
+
+   .brunchtext a {
+      color: rgb(255 103 50);
+      background: #ffffffba;
+      }
+
+
+.winecellar {
+   display: flex;
+   justify-content: right;
+   text-align: right;
+   background-image: url(./img/wine-3021459_1280.jpg);
+   background-size: cover;
+   height: 760px;
+   width: 1350px;
+   margin: 0 auto;
+   font-size: 40px;
+   padding-top: 60px;
+   padding-right: 60px;
+   margin-bottom: 300px;
+}
+
+.winecellartext h3 {
+   color: beige;
+}
+
+.winecellartext p {
+   color: white;
+}
+
+.winecellartext a {
+   color: white;
+   text-shadow: 0 0 6px black;
+   font-size: 30px;
 }
