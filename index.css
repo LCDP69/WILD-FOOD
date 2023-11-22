@@ -100,7 +100,48 @@ nav{
 
 /*---- fin de la navbar mobile-----------*/
 
-
+/*------------------SECTION WELCOME--------------*/
+  
+  /*image zoom pour apporter du mouvement*/
+  .welcome{
+    background-image: url(img/bar-498420_1280.jpg);
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+  .welcome{
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  
+  }
+  
+  .welcome h1{
+    font-size: 4rem;
+    color: var(--light-color);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    animation: 2s 3 alternate slidein; 
+  }
+  
+  .welcome span{
+    animation: 3s 2 alternate-reverse slidein; 
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  /*---------------END SECTION WELCOME--------------*/
 
 
 @media screen and (min-width: 767px){
@@ -112,6 +153,16 @@ nav{
     display: none;
   } 
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--medium-color);
+    position: fixed;
+     top: 0;
+     width: 100%;
+ }
 
 }
 
