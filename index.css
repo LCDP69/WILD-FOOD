@@ -1,17 +1,117 @@
-/*
-*  html5resetcss
-*/
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-ins{background-color:#ff9;color:#000;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primaryfont);
+}
+html{
+  font-size: 16px;
+  
+}
+
+:root {
+    --primaryfont: 'Radley', serif;
+    --dark-color: #000000;
+    --medium-color: #D9D9D9;
+    --light-color:  #f5f5f5;
+    --intermediate-color: #5B5458;
+   }
+
+   
+
+  /*---- création de la navbar-----------*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-color);
+}
+
+
+.toggle{
+  position: relative;
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: var(--light-color);
+}
+
+.toggle .open-nav-menu{
+  display: block;
+}
+
+.toggle .close-nav-menu{
+  display: none;
+}
+
+.open .toggle .open-nav-menu{
+  display: none;
+}
+
+.open .toggle .close-nav-menu{
+  display: block;
+}
+
+.title{
+  display: block;
+  color: var(--light-color);
+  align-items: center;
+}
+
+.nav-menu{
+  position: absolute;
+  top: 9%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: var(--dark-color);
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: transform 1s;
+}
+
+.open .nav-menu{
+  transform: translateX(0);
+}
+
+.nav-menu li{
+  list-style: none;
+
+}
+
+.nav-menu li a{
+  font-size: 2rem;
+  color: var(--light-color);
+  text-decoration: none;
+}
+
+
+
+.open .btn{
+  border: 0;
+  background: var(--medium-color);
+  color: var(--dark-color);
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+/*---- fin de la navbar mobile-----------*/
+
+
+
+
+@media screen and (min-width: 767px){
+
+
+  /*-------- NAVBAR--------------*/
+
+  .toggle{
+    display: none;
+  } 
+
+
+}
+
