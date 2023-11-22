@@ -32,8 +32,8 @@ nav {
    padding: 10px 20px;
    background: var(--medium-color);
    position: fixed;
-    top: 0;
-    width: 100%;
+   top: 0;
+   width: 100%;
 }
 
 .logoandtitle {
@@ -111,6 +111,19 @@ header {
 .middlepic div,
 .rightpic div {
    width: 400px;
+}
+
+.leftpic a,
+.middlepic a,
+.rightpic a {
+   background: var(--medium-color);
+   padding: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: brown;
+   font-weight: bold;
+   letter-spacing: 1px;
+   text-decoration: none;
 }
 
 .underboxpage1 {
@@ -217,19 +230,19 @@ header {
 }
 
 .brunchtext h3 {
-color: rgb(255 103 50);
-background: #ffffffba;
+   color: rgb(255 103 50);
+   background: #ffffffba;
 }
 
 .brunchtext p {
    color: rgb(255 103 50);
    background: #ffffffba;
-   }
+}
 
-   .brunchtext a {
-      color: rgb(255 103 50);
-      background: #ffffffba;
-      }
+.brunchtext a {
+   color: rgb(255 103 50);
+   background: #ffffffba;
+}
 
 
 .winecellar {
@@ -244,7 +257,7 @@ background: #ffffffba;
    font-size: 40px;
    padding-top: 60px;
    padding-right: 60px;
-   margin-bottom: 300px;
+   margin-bottom: 230px;
 }
 
 .winecellartext h3 {
@@ -259,4 +272,140 @@ background: #ffffffba;
    color: white;
    text-shadow: 0 0 6px black;
    font-size: 30px;
+}
+
+.mosaicgrid {
+   height: 760px;
+   width: 1350px;
+   margin: 0 auto;
+   font-size: 40px;
+   padding-top: 20px;
+   padding-right: 60px;
+   margin-bottom: 100px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas:
+      "yel yel re or"
+      "yel yel gr bl"
+      "gra vio gr br";
+   gap: 20px;
+}
+
+#grid1 {
+   background-image: url(./img/beef.jpg);
+   background-size: cover;
+   grid-area: yel;
+   object-fit: cover;
+}
+
+#grid2 {
+   background-image: url(./img/tacos.jpg);
+   background-size: cover;
+   object-fit: cover;
+}
+
+#grid3 {
+   background-image: url(./img/salad.jpg);
+   background-size: cover;
+   object-fit: cover;
+   grid-area: or;
+}
+
+#grid4 {
+   background-image: url(./img/oysters.jpg);
+   background-size: cover;
+   grid-area: gr;
+}
+
+#grid5 {
+   background-image: url(./img/pasta.jpg);
+   background-size: cover;
+   grid-area: bl;
+}
+
+#grid6 {
+   background-image: url(./img/bottlewine.jpg);
+   background-size: cover;
+   grid-area: gra;
+}
+
+#grid7 {
+   background-image: url(./img/tomatoes-321671_1280.jpg);
+   background-size: cover;
+   grid-area: vio;
+}
+
+#grid8 {
+   background-image: url(./img/star-anise-1887231_1280.jpg);
+   background-size: cover;
+   grid-area: br;
+}
+
+.booking {
+   text-align: center;
+   display: grid;
+   justify-content: center;
+   gap: 10px;
+   margin-top: 250px;
+}
+
+.infos {
+   display: flex;
+   grid-template-columns: 1fr 1fr;
+   background: var(--medium-color);
+   align-items: center;
+   gap: 20px;
+}
+
+.infos-left {
+   width: 50%;
+   display: grid;
+   justify-content: center;
+   gap: 10px;
+}
+
+.wildfoodtitle {
+   text-align: center;
+}
+
+.btn-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.btn-container button {
+   border: none;
+   border-radius: 10px;
+   color: var(--light-color);
+   background: var(--dark-color);
+   width: 150px;
+   padding: 10px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   margin: 5px;
+}
+
+.infos-right {
+   width: 50%;
+   margin-top: 30px;
+}
+
+footer {
+   background: var(--medium-color);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin: auto;
+   padding: 10px;
+   font-size: 1rem;
+}
+
+.footerleft {
+   display: grid;
+}
+
+.footerright {
+   display: grid;
+   text-align: right;
 }
