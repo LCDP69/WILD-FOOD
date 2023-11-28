@@ -1,0 +1,16 @@
+.carousel-container {
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card-service {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Ajoute le style que tu veux pour les images, titres, boutons, etc. */
+  
