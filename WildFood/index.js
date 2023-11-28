@@ -18,7 +18,22 @@ toggle.addEventListener("click", function () {
 
 
 
-//------------------ WILD FOOD SERVICES---------*/
+/*------------------ WILD FOOD SERVICES---------*/
+
+function previous(){
+    const widthSlider = document.querySelector('.caroussel').offsetWidth;
+    document.querySelector('.cardSlider').scrollLeft -= widthSlider ;
+}
+
+function next(){
+    const widhtSlider = document.querySelector('.caroussel').offsetWidth;
+    document.querySelector('.cardSlider').scrollLeft += widhtSlider ;
+}
+const prevButton = document.getElementById("previousButton");
+prevButton.addEventListener("click", previous);
+
+const nextButton = document.getElementById("nextButton");
+nextButton.addEventListener("click", next);
 
 
 /*const slide = document.querySelectorAll('.slider-single');
