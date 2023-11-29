@@ -151,11 +151,8 @@ h2 {
     margin-top: 20px;
     margin-bottom: 30px;
     color: wheat;
-    /* Couleur bleue */
     font-size: 1.5em;
-    /* Taille de police */
     text-align: center;
-    /* Centrer le texte */
     font-style: italic;
     box-shadow: inset 1px -1px 0px 20px black;
 
@@ -315,7 +312,7 @@ h2 {
     margin: 0 auto;
     font-size: 40px;
     padding-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .winecellartext h3 {
@@ -338,13 +335,66 @@ h2 {
     font-weight: bold;
 }
 
-
-
-
 /* GRID */
 
 .mosaicgrid {
     visibility: hidden;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.infos-left {
+    justify-content: center;
+    background: var(--medium-color);
+    width: 100%;
+    padding: 50px;
+}
+
+.wildfoodtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.btn-container {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.btn-container button {
+    border: none;
+    border-radius: 10px;
+    color: var(--light-color);
+    background: var(--dark-color);
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.btn-container a {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.infos-middle {
+    text-align: center;
+    justify-content: center;
+}
+
+.fingerRight {
+    visibility: hidden;
+}
+
+.infos-right {
+    margin-bottom: 50px;
 }
 
 /* FOOTER */
@@ -762,6 +812,10 @@ footer {
 
     .infos-middle {
         width: 17%;
+    }
+
+    .fingerDown {
+        visibility: hidden;
     }
 
     .infos-right {
