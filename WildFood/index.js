@@ -20,23 +20,40 @@ toggle.addEventListener("click", function () {
 
 /*------------------ WILD FOOD SERVICES---------*/
 
-function previous(){
-    const widthSlider = document.querySelector('.caroussel').offsetWidth;
-    document.querySelector('.cardSlider').scrollLeft -= widthSlider ;
-}
-
-function next(){
-    const widhtSlider = document.querySelector('.caroussel').offsetWidth;
-    document.querySelector('.cardSlider').scrollLeft += widhtSlider ;
-}
-const prevButton = document.getElementById("previousButton");
-prevButton.addEventListener("click", previous);
-
-const nextButton = document.getElementById("nextButton");
-nextButton.addEventListener("click", next);
+/*----------- VERSION AVEC ICONS--------------*/
 
 
-/*const slide = document.querySelectorAll('.slider-single');
+
+function previous() {
+    document.querySelector('.cardSliderSingle').scrollIntoView({ behavior: 'smooth' });
+  }
+function next() {
+    const cardSliderSingle = document.querySelectorAll('.cardSliderSingle')[1];
+    cardSliderSingle.scrollIntoView({ behavior: 'smooth' });
+  }
+  const prevButton = document.getElementById("prevButton");
+  prevButton.addEventListener("click", previous);
+  
+  const nextButton = document.getElementById("nextButton");
+  nextButton.addEventListener("click", next);
+  
+  function previous() {
+    document.querySelector('.cardSliderSingle:first-child').style.display = 'none';
+    document.querySelector('.cardSliderSingle:nth-child(2)').style.display = 'flex';
+  }
+  
+
+
+/*----------- END VERSION AVEC ICONS--------------*/
+
+/*----------- VERSION TACTILE--------------*/
+
+//pour cette version je dois remplacer les fonctions previous et next par les fonctions "handleTouchStart", "handlzTouchEnd", "handleSwipe".
+
+// Ajouter des écouteurs d'évenement tactile à l'élément ".cardSlider".
+
+/*
+const slide = document.querySelectorAll('.caroussel');
 
 for (const elem of slide) {
     Elem.addEventListener('touchstart', handleTouchEvent);
@@ -55,6 +72,6 @@ function handleTouchEvent(event) {
 
         slide(direction);
     }
-}*/
-
+}
+*/
 

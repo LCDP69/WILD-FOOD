@@ -147,22 +147,62 @@ nav {
 }
 /*---------------WILD FOOD SERVICES -------------*/
 
+
 /*----------CARROUSEL---------------------*/
 
 .caroussel{
-    height: 800px;
-    width: 500px;
+    
+    height: 100vh;
+    width: 100vw;
+
 }
 
 .slider_nav{
     position: absolute;
+    transform: translateY(-50%);
 }
+
 
 .cardSlider{
     height: 100%;
-    width: 100%;
+    width: 300%;
     display: flex;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.cardSliderSingle {
+    flex: 1;
+}
+
+.cardSliderSingle {
+    display: flex;
+  }
+  
+  .caroussel:hover .cardSliderSingle:first-child {
+    display: none;
+  }
+  
+  .caroussel:hover .cardSliderSingle:nth-child(2) {
+    display: flex;
+  }
+  
+
+.fa-solid {
+    color: var(--intermediate-color);
+}
+/*
+.slider_nav_icon--next,
+.slider_nav_icon--prev {
+   font-size: 2rem;
+
+}
+*/
+.cardSlider img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
 }
 
 
@@ -279,6 +319,9 @@ footer {
         border: none;
     }
 
+    /*---------------WILD FOOD SERVICES -------------*/
+
+
     .services-section h4,
     h2 {
         text-align: center;
@@ -291,6 +334,9 @@ footer {
         font-size: 20px;
     }
 
+    
+    /*----------CARROUSEL---------------------*/
+
     .caroussel {
         display: flex;
         justify-content: space-around;
@@ -298,15 +344,18 @@ footer {
         gap: 40px;
         margin-bottom: 80px;
         text-align: center;
-        font-family: 'Radley', serif;
         line-height: 1.7;
         font-size: 1.2rem;
     }
-
-    .cardSliderSingle {
-        width: 400px;
-
+  
+   
+    
+    .cardSlider{
+        display: flex;
+        justify-content: space-around;
     }
+
+
 
     .cardSliderSingle img {
         width: 400px;
@@ -333,6 +382,8 @@ footer {
     #Btnnn {
         margin-top: 50px;
     }
+
+    /*----------END CARROUSEL---------------------*/
 
     .lunch {
 
