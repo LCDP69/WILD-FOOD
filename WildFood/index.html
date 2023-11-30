@@ -28,11 +28,11 @@
 
                 <ul class="navList">
                     <li><a href="#LaMaisonWILD">LA MAISON WILD</a></li>
-                    <li><a href="#DEJEUNER">DEJEUNER</a></li>
+                    <li><a href="#dejeuner">DEJEUNER</a></li>
                     <li><a href="#diner">DINER</a></li>
-                    <li><a href="#BRUNCH">BRUNCH</a></li>
-                    <li><a href="#LACAVE">LA CAVE</a></li>
-                    <li><a href="#ADRESSE">ADRESSE</a></li>
+                    <li><a href="#brunch">BRUNCH</a></li>
+                    <li><a href="#laCave">LA CAVE</a></li>
+                    <li><a href="#adresse">ADRESSE</a></li>
                     <li><a href="reservez.html"><button class="btn">RESERVEZ</button></a>
                     </li>
                 </ul>
@@ -45,9 +45,9 @@
                 <div>
                     <ul class="nav-menu">
                         <li><a href="#LaMaisonWILD">LA MAISON WILD</a></li>
-                        <li><a href="#DEJEUNER">DEJEUNER</a></li>
+                        <li><a href="#dejeuner">DEJEUNER</a></li>
                         <li><a href="#diner">DINER</a></li>
-                        <li><a href="#BRUNCH">BRUNCH</a></li>
+                        <li><a href="#brunch">BRUNCH</a></li>
                         <li><a href="#LACAVE">LA CAVE</a></li>
                         <li><a href="#ADRESSE">ADRESSE</a></li>
                         <li><a href="reservez.html"><button class="btn">RESERVEZ</button></a>
@@ -74,25 +74,54 @@
 
         </section>
 
-
-        <!--CARROUSEL-->
-
-        <!--END CARROUSEL-->
-
-
         <!------------WILD FOOD SERVICES ------------------->
 
-        <section class="services-section">
+        <section class="services-section" id="LaMaisonWILD">
 
             <h4>Notre Crédo...</h4>
             <h2>Cuisiner, c'est partager !</h2>
 
-            <div class="caroussel">
+            <div class="caroussel" id="main">
+                <div id="wrapper">
+                    <div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button></div>
+        
+                    <div id="image-container">
+        
+                        <div id="image-carousel">
+        
+                            <div class="img">
+                            <img src="./img/table-3084384_1280.jpg"
+                                alt="">
+                                <div class="overlay-text overlay-text1">Restaurant Gastronomique</div>
+                            </div>
+        
+                            <div class="img">
+                            <img src="./img/ernie-els-wines-6803489_1280.jpg"
+                                alt="">
+                                <div class="overlay-text overlay-text2">La Cave</div>
+                            </div>
+        
+                            <div class="img">
+                            <img src="./img/restaurant-805103_1280.jpg"
+                                alt="">
+                                <div class="overlay-text overlay-text3">La Terrasse</div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div><button class="active" id="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+               <div class="cardDesktop" id="card-container">
 
-                <div class="cardSliderSingle">
+                <div class="cardSliderSingle" id="image-carousel">
                     <img src="./img/table-3084384_1280.jpg" alt="table" />
 
-                    <h3>Restaurant Gastronomique</h3>
+                   <h3>Restaurant Gastronomique</h3>
 
                     <p>Nous vous accueillons au déjeuner de 12h à 13h30 et au dîner de 19h30 à 21h30...</p>
 
@@ -100,7 +129,7 @@
 
                 </div>
 
-                <div class="cardSliderSingle">
+                <div class="cardSliderSingle" id="image-carousel">
                     <img src="./img/ernie-els-wines-6803489_1280.jpg" alt="winecellar" />
 
                     <h3>La Cave</h3>
@@ -109,23 +138,26 @@
                         Dégustez au restaurant ou emportez votre bouteille à la maison...</p>
 
                     <a href="#"><button class="btn-2">La carte</button></a>
+                    
 
                 </div>
 
-                <div class="cardSliderSingle">
+                <div class="cardSliderSingle" id="image-carousel">
                     <img src="./img/restaurant-805103_1280.jpg" alt="terrace" />
-                    <h3>Restaurant Gastronomique</h3>
+                   <h3>Restaurant Gastronomique</h3>
 
                     <p id="p">La terrasse est actuellement fermée.</p>
 
                     <a href="#"><button class="btn-2" id="Btnnn">En savoir plus</button></a>
+            
                 </div>
 
-            </div>
+            </div> 
+    
 
-        </section>
+        <!------------END WILD FOOD SERVICES ------------------->
 
-        <section class="lunch">
+        <section class="lunch" id="dejeuner">
             <video src="./vidéos/video (2160p).mp4" autoplay loop muted></video>
             <div class="lunchtext">
                 <h3>Déjeuner</h3>
@@ -142,7 +174,7 @@
             </div>
         </section>
 
-        <section class="diner">
+        <section class="diner" id="diner">
 
             <video src="./vidéos/production_id_3769033 (1080p).mp4" autoplay loop muted></video>
 
@@ -162,7 +194,7 @@
             </div>
         </section>
 
-        <section class="brunch">
+        <section class="brunch" id="brunch">
 
             <div class="brunchtext">
                 <h3>NOTRE FORMULE BRUNCH 26€</h3>
@@ -176,7 +208,7 @@
 
         </section>
 
-        <section class="winecellar">
+        <section class="winecellar" id="laCave">
 
             <div class="winecellartext">
                 <h3>Notre cave à vins</h3>
@@ -210,7 +242,7 @@
                     <button><a href="jobApply">Postuler ?<br> On recrute !</a></button>
                 </div>
             </div>
-            <div class="infos-middle">
+            <div class="infos-middle" id="adresse">
                 <h1>Pour nous trouver, <br>c'est par ici ! <span class="fingerRight">&#9755;</span><span
                         class="fingerDown">&#9759;</span></h1>
             </div>

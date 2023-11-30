@@ -25,7 +25,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: var(--dark-color);
-    gap: 30px;
 }
 
 
@@ -56,7 +55,13 @@ nav {
 .title {
     display: block;
     color: var(--light-color);
-    align-items: center;
+}
+
+.title h1 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 15px;
+
 }
 
 .navList {
@@ -84,11 +89,13 @@ nav {
 
 .nav-menu li {
     list-style: none;
+    padding: 7px;
 
 }
 
 .nav-menu li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
+
     color: var(--light-color);
     text-decoration: none;
 }
@@ -99,8 +106,7 @@ nav {
     border: 0;
     background: var(--medium-color);
     color: var(--dark-color);
-    padding: 1rem 1.5rem;
-    margin: 1rem;
+    padding: 1rem 1rem;
     border-radius: 1rem;
 }
 
@@ -146,6 +152,9 @@ nav {
     }
 }
 
+/*--------SERVICE SECTION-----------*/
+
+
 .services-section h4,
 h2 {
     margin-top: 20px;
@@ -158,39 +167,107 @@ h2 {
 
 }
 
+/*-----------CAROUSEL------------*/
+
+
+#main>span {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 4px rgb(255, 255, 255);
+    color: aliceblue;
+}
+
+#wrapper {
+    height: 49vh;
+    width: 365px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#wrapper i {
+    font-size: 25px;
+    pointer-events: none
+}
+
+#image-container {
+    height: 100%;
+    width: 50vw;
+    overflow: hidden;
+
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img:hover .overlay-text {
+    opacity: 1;
+}
+
+.img:hover .overlay-text2 {
+    opacity: 1;
+}
+
+.img:hover .overlay-text3 {
+    opacity: 1;
+}
+
+#image-carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 200px;
+    position: relative;
+}
+
+#image-carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    position: absolute;
+    transition: 1s;
+
+}
+
+button {
+
+
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+
+/* fin carousel  */
+
+
 .caroussel {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    transition: transform 0.5s ease;
 }
 
-.cardSliderSingle {
-    justify-content: center;
-    align-items: center;
+.card-service {
+    flex: 0 0 100%;
+    box-sizing: border-box;
 }
 
-.cardSliderSingle p {
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-}
 
-.cardSliderSingle .btn-2 {
-    margin-top: 10px;
-    padding: 10px;
-    margin-bottom: 50px;
-    color: brown;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-size: 15px;
-}
 
-.cardSliderSingle img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
+/*-----------END CAROUSEL------------*/
 
 .lunch {
     display: flex;
@@ -201,7 +278,7 @@ h2 {
 .lunch video {
     width: 400px;
     height: 200px;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 .lunchtext {
@@ -236,7 +313,7 @@ h2 {
 .diner video {
     width: 400px;
     height: 210px;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 .dinertext {
@@ -426,9 +503,10 @@ footer {
     text-decoration: none;
 }
 
+
 /* VERSION DESKTOP ! */
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
 
 
     /*-------- NAVBAR--------------*/
@@ -453,8 +531,7 @@ footer {
     }
 
     .title h1 {
-        color: black;
-        font-size: 15px;
+        display: none;
     }
 
     .navList {
@@ -480,6 +557,8 @@ footer {
     }
 
     .navList li {
+        font-size: 1rem;
+        padding: 20px;
         letter-spacing: 2px;
         font-weight: bold;
         text-decoration: none;
@@ -498,6 +577,14 @@ footer {
         border-radius: 20px;
         border: none;
     }
+    /*------END NAVBAR------*/
+
+
+    /*--------SERVICE SECTION--------*/
+
+    #wrapper{
+       display: none; 
+    }
 
     .services-section h4,
     h2 {
@@ -511,9 +598,8 @@ footer {
         font-size: 20px;
     }
 
-    .caroussel {
+    .cardDesktop {
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
         gap: 40px;
@@ -525,13 +611,20 @@ footer {
     }
 
     .cardSliderSingle {
-        width: 400px;
+        width: 600px;
 
     }
 
+    #image-carousel {
+        visibility:visible ;
+    }
+
     .cardSliderSingle img {
+        visibility: visible;
         width: 400px;
         height: 400px;
+        left: auto;
+        right: auto;
         object-fit: cover;
 
     }
@@ -545,7 +638,7 @@ footer {
         font-weight: bold;
         letter-spacing: 1px;
         text-decoration: none;
-    }
+    }                            
 
     #p {
         margin-top: 20px;
@@ -554,7 +647,7 @@ footer {
     #Btnnn {
         margin-top: 50px;
     }
-
+/*--------END SERVICE SECTION--------*/
     .lunch {
 
         display: flex;
@@ -609,7 +702,6 @@ footer {
     .dinertext {
         list-style-type: none;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         line-height: 1.8;
