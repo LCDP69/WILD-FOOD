@@ -28,11 +28,11 @@
 
                 <ul class="navList">
                     <li><a href="#LaMaisonWILD">LA MAISON WILD</a></li>
-                    <li><a href="#DEJEUNER">DEJEUNER</a></li>
+                    <li><a href="#dejeuner">DEJEUNER</a></li>
                     <li><a href="#diner">DINER</a></li>
-                    <li><a href="#BRUNCH">BRUNCH</a></li>
-                    <li><a href="#LACAVE">LA CAVE</a></li>
-                    <li><a href="#ADRESSE">ADRESSE</a></li>
+                    <li><a href="#brunch">BRUNCH</a></li>
+                    <li><a href="#laCave">LA CAVE</a></li>
+                    <li><a href="#adresse">ADRESSE</a></li>
                     <li><a href="reservez.html"><button class="btn">RESERVEZ</button></a>
                     </li>
                 </ul>
@@ -45,9 +45,9 @@
                 <div>
                     <ul class="nav-menu">
                         <li><a href="#LaMaisonWILD">LA MAISON WILD</a></li>
-                        <li><a href="#DEJEUNER">DEJEUNER</a></li>
+                        <li><a href="#dejeuner">DEJEUNER</a></li>
                         <li><a href="#diner">DINER</a></li>
-                        <li><a href="#BRUNCH">BRUNCH</a></li>
+                        <li><a href="#brunch">BRUNCH</a></li>
                         <li><a href="#LACAVE">LA CAVE</a></li>
                         <li><a href="#ADRESSE">ADRESSE</a></li>
                         <li><a href="reservez.html"><button class="btn">RESERVEZ</button></a>
@@ -74,25 +74,54 @@
 
         </section>
 
-
-        <!--CARROUSEL-->
-
-        <!--END CARROUSEL-->
-
-
         <!------------WILD FOOD SERVICES ------------------->
 
-        <section class="services-section">
+        <section class="services-section" id="LaMaisonWILD">
 
             <h4>Notre Crédo...</h4>
-            <h2>Cuisiner, c'est partager</h2>
+            <h2>Cuisiner, c'est partager !</h2>
 
-            <div class="caroussel">
+            <div class="caroussel" id="main">
+                <div id="wrapper">
+                    <div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-arrow-left"></i></button></div>
+        
+                    <div id="image-container">
+        
+                        <div id="image-carousel">
+        
+                            <div class="img">
+                            <img src="./img/table-3084384_1280.jpg"
+                                alt="">
+                                <div class="overlay-text overlay-text1">Restaurant Gastronomique</div>
+                            </div>
+        
+                            <div class="img">
+                            <img src="./img/ernie-els-wines-6803489_1280.jpg"
+                                alt="">
+                                <div class="overlay-text overlay-text2">La Cave</div>
+                            </div>
+        
+                            <div class="img">
+                            <img src="./img/restaurant-805103_1280.jpg"
+                                alt="">
+                                <div class="overlay-text overlay-text3">La Terrasse</div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <div><button class="active" id="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+               <div class="cardDesktop" id="card-container">
 
-                <div class="cardSliderSingle">
+                <div class="cardSliderSingle" id="image-carousel">
                     <img src="./img/table-3084384_1280.jpg" alt="table" />
 
-                    <h3>Restaurant Gastronomique</h3>
+                   <h3>Restaurant Gastronomique</h3>
 
                     <p>Nous vous accueillons au déjeuner de 12h à 13h30 et au dîner de 19h30 à 21h30...</p>
 
@@ -100,7 +129,7 @@
 
                 </div>
 
-                <div class="cardSliderSingle">
+                <div class="cardSliderSingle" id="image-carousel">
                     <img src="./img/ernie-els-wines-6803489_1280.jpg" alt="winecellar" />
 
                     <h3>La Cave</h3>
@@ -109,23 +138,26 @@
                         Dégustez au restaurant ou emportez votre bouteille à la maison...</p>
 
                     <a href="#"><button class="btn-2">La carte</button></a>
+                    
 
                 </div>
 
-                <div class="cardSliderSingle">
+                <div class="cardSliderSingle" id="image-carousel">
                     <img src="./img/restaurant-805103_1280.jpg" alt="terrace" />
-                    <h3>Restaurant Gastronomique</h3>
+                   <h3>Restaurant Gastronomique</h3>
 
                     <p id="p">La terrasse est actuellement fermée.</p>
 
                     <a href="#"><button class="btn-2" id="Btnnn">En savoir plus</button></a>
+            
                 </div>
 
-            </div>
+            </div> 
+    
 
-        </section>
+        <!------------END WILD FOOD SERVICES ------------------->
 
-        <section class="lunch">
+        <section class="lunch" id="dejeuner">
             <video src="./vidéos/video (2160p).mp4" autoplay loop muted></video>
             <div class="lunchtext">
                 <h3>Déjeuner</h3>
@@ -142,8 +174,7 @@
             </div>
         </section>
 
-        <section class="diner">
-
+        <section class="diner" id="diner">
             <video src="./vidéos/production_id_3769033 (1080p).mp4" autoplay loop muted></video>
 
             <div class="dinertext">
@@ -162,7 +193,7 @@
             </div>
         </section>
 
-        <section class="brunch">
+        <section class="brunch" id="brunch">
 
             <div class="brunchtext">
                 <h3>NOTRE FORMULE BRUNCH 26€</h3>
@@ -176,7 +207,7 @@
 
         </section>
 
-        <section class="winecellar">
+        <section class="winecellar" id="laCave">
 
             <div class="winecellartext">
                 <h3>Notre cave à vins</h3>
@@ -199,50 +230,42 @@
 
         </section>
 
-        <section class="infos">
+    </main>
+    <footer>
+        
             <div class="infos-left">
                 <div class="wildfoodtitle">
                     <h3>WILD FOOD</h3>
                 </div>
                 <div class="btn-container">
                     <button><a href="book">Réserver</a></button>
-                    <button>Nous contacter</button>
-                    <button>Postuler ?<br> On recrute !</button>
+                    <button><a href="contact">Nous contacter</a></button>
+                    <button><a href="jobApply">On recrute !</a></button>
                 </div>
             </div>
-            <div class="infos-middle">
-                <h1>Pour nous trouver, <br>c'est par ici ! &#9755;</h1>
+            <div class="infos-middle" id="adresse">
+                <h1>Pour nous trouver, <br>c'est par ici ! <span class="fingerRight">&#9755;</span><span
+                        class="fingerDown">&#9759;</span></h1>
             </div>
             <div class="infos-right">
                 <div class="googlemaps">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0242770878112!2d4.849383976648658!3d45.770703712935536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eaf32bb21f17%3A0xd933b4e417342271!2s36%20Rue%20T%C3%AAte%20d&#39;Or%2C%2069006%20Lyon!5e0!3m2!1sfr!2sfr!4v1700213988909!5m2!1sfr!2sfr"
-                        width="600" height="350" style="border-radius: 20px" ;" allowfullscreen="" loading="lazy"
+                        width="400" height="250" style="border-radius: 20px" ;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </section>
 
-    </main>
+            <div class="social-media-container">
 
-
-    <footer>
-        <div class="social-media-container">
-
-            <h3>WILD FOOD</h3>
-
-            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
-
-        </div>
-
-        <div class="cg">
-            <a href="cg.html" target="_blank">Conditions générales</a>
-        </div>
+                <h3>Suivez nous sur nos réseaux</h3>
+    
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.google.com" target="_blank"><i class="fa-brands fa-google"></i></a>
+    
+            </div>
     </footer>
-
-
 
     <script src="./index.js"></script>
 </body>
