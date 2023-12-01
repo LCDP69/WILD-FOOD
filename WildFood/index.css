@@ -24,7 +24,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--dark-color);
+    background: var(--medium-color);
+}
+
+.logo{
+    margin-left: 2.5rem;
 }
 
 
@@ -32,8 +36,9 @@ nav {
     position: relative;
     display: block;
     font-size: 2rem;
-    padding: 0.5rem;
-    color: var(--light-color);
+    margin-right: 2rem;
+    padding: .5rem;
+    color: var(--dark-color);
 }
 
 .toggle .open-nav-menu {
@@ -54,14 +59,13 @@ nav {
 
 .title {
     display: block;
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .title h1 {
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 15px;
-
+    padding: .5rem;
 }
 
 .navList {
@@ -74,7 +78,7 @@ nav {
     left: 0;
     width: 100%;
     height: auto;
-    background: var(--dark-color);
+    background: var(--medium-color);
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem;
@@ -95,8 +99,7 @@ nav {
 
 .nav-menu li a {
     font-size: 1.5rem;
-
-    color: var(--light-color);
+    color: var(--dark-color);
     text-decoration: none;
 }
 
@@ -104,8 +107,8 @@ nav {
 
 .open .btn {
     border: 0;
-    background: var(--medium-color);
-    color: var(--dark-color);
+    background: var(--dark-color);
+    color: var(--light-color);
     padding: 1rem 1rem;
     border-radius: 1rem;
 }
@@ -250,10 +253,6 @@ button {
     border-radius: 10px;
 }
 
-
-/* fin carousel  */
-
-
 .caroussel {
     display: flex;
     flex-direction: row;
@@ -265,14 +264,13 @@ button {
     box-sizing: border-box;
 }
 
-
-
 /*-----------END CAROUSEL------------*/
 
 .lunch {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .lunch video {
@@ -307,6 +305,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 60px;
 }
 
@@ -476,10 +475,60 @@ button {
 
 /* FOOTER */
 
-footer {
-    background: var(--dark-color);
-    color: var(--light-color);
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--medium-color);
+    gap: 20px;
+}
+
+.infos-left {
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+}
+
+.wildfoodtitle {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.btn-container {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.btn-container button {
+    border: none;
+    border-radius: 10px;
+    color: var(--light-color);
+    background: var(--dark-color);
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+
+.btn-container a {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.infos-middle {
+    text-align: center;
+    justify-content: center;
+}
+
+.fingerRight {
+    visibility: hidden;
+}
+
+.infos-right {
+    margin-bottom: 50px;
 }
 
 .social-media-container {
@@ -490,18 +539,12 @@ footer {
 }
 
 .fa-brands {
+    margin: 1rem;
     padding: 1rem;
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
-.cg {
-    padding-bottom: 0.5rem;
-}
 
-.cg a {
-    color: var(--light-color);
-    text-decoration: none;
-}
 
 .cardDesktop {
         display: none;
@@ -692,8 +735,11 @@ footer {
         color: black;
     }
 
+  /*--------Diner----------------*/
+
     .diner {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
         gap: 200px;
@@ -730,6 +776,9 @@ footer {
         color: black;
     }
 
+    
+    /*-------- End Diner----------------*/
+
     .brunch {
         display: flex;
         justify-content: center;
@@ -764,6 +813,8 @@ footer {
         background: #ffffffba;
     }
 
+    /*----------LA CAVE---------------*/
+
     .winecellar {
         display: flex;
         justify-content: right;
@@ -780,8 +831,9 @@ footer {
     }
 
 
+
     .winecellartext h3 {
-        color: beige;
+        color: white;
     }
 
     .winecellartext p {
@@ -793,6 +845,9 @@ footer {
         text-shadow: 0 0 6px black;
         font-size: 30px;
     }
+
+    /*---------- END LA CAVE---------------*/
+
 
     .mosaicgrid {
         visibility: visible;
@@ -871,12 +926,15 @@ footer {
         margin-top: 250px;
     }
 
-    .infos {
+    /*---------------Footer--------*/
+
+    footer {
         display: flex;
-        grid-template-columns: 1fr 1fr;
+        flex-direction: row;
         background: var(--medium-color);
         align-items: center;
         gap: 30px;
+        color: var(--dark-color);
 
     }
 
