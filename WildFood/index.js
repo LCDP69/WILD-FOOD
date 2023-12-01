@@ -50,7 +50,7 @@ const prev = () => {
         counter--;
         slideImage();
         console.log(counter);
-    } 
+    }
 }
 
 const next = () => {

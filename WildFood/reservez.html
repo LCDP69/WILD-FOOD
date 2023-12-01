@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Réservation</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réservation</title>
+  <link rel="stylesheet" href="./reservez.css">
+  <link rel="shortcut icon" href="./img/logo WF.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Radley:ital@0;1&display=swap"
+    rel="stylesheet">
+</head>
 
-    <section class="booking">
-      <h3>Réservation</h3>
-      <h4>Le Formulaire</h4>
-      <form action="/action.php" method="post">
-        <label for="name"></label
-        ><input id="name" type="text" placeholder="Nom de réservation" />
-        <br />
-        <label for="numberofpeople"> Nombre de personne </label>
-        <select id="numberofpeople">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option selected="">2</option>
-        </select>
-        <br />
-        <textarea
-          name="textarea"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Veuillez nous indiquer la date et l'heure de votre passage chez nous. Notre service de réservation vous recontactera pour confirmer la réservation."
-        ></textarea>
-        <br />
-        <label for="phonenumber"></label
-        ><input
-          id="phonenumber"
-          type="text"
-          placeholder="Numéro de téléphone"
-        />
-        <br />
-        <input type="submit" value="Valider" />
-      </form>
-    </section>
+<body>
+
+  <section class="booking">
+    <h3>Réservation &#9743;</h3>
+    <h4>Le Formulaire</h4>
+    <form action="/réservez" method="post" id="form">
+      <label for="name"></label><input id="name" type="text" placeholder="Nom de réservation" />
+      <br />
+      <label for="numberofpeople" id="numberofpeople">
+        <p> Nombre de personne </p>
+      </label>
+
+
+      <select id="numberofpeople">
+        <option value="1">1</option>
+        <option selected="">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <br />
+      <textarea name="textarea" id="message" cols="30" rows="10"
+        placeholder="Veuillez nous indiquer la date et l'heure de votre passage chez nous. Notre service de réservation vous recontactera pour confirmer la réservation."></textarea>
+      <br />
+      <label for="phonenumber"></label><input id="phonenumber" type="text" placeholder="Numéro de téléphone" />
+      <br />
+      <input type="submit" value="Valider" id="Valider" />
+    </form>
+
     <section>
-      <a href="index.html">Retour à l'acceuil.</a>
+      <div class="a">
+        <a href="index.html">Retour à l'acceuil.</a>
+      </div>
     </section>
+  </section>
 
-  </body>
+  <script>
+    document.getElementById("Valider").addEventListener("click", function () {
+      alert("Réservation confirmée !");
+    });
+  </script>
+
+  <script>
+    document.getElementById("form").addEventListener("submit", function (event) {
+      event.preventDefault(); // Cela empêche le rechargement de la page
+
+      alert("Réservation confirmée !");
+    });
+  </script>
+
+</body>
+
 </html>

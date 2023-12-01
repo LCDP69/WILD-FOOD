@@ -27,9 +27,6 @@ nav {
     background: var(--medium-color);
 }
 
-.logo{
-    margin-left: 2.5rem;
-}
 
 
 .toggle {
@@ -81,6 +78,7 @@ nav {
     background: var(--medium-color);
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     padding: 2rem;
     transform: translateX(-100%);
     transition: transform 1s;
@@ -181,7 +179,7 @@ h2 {
 
 #wrapper {
     height: 49vh;
-    width: 365px;
+    width: 765px;
     display: flex;
     border: none;
     justify-content: space-around;
@@ -239,7 +237,7 @@ h2 {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 15px;
     position: absolute;
     transition: 1s;
 
@@ -475,7 +473,18 @@ button {
 
 /* FOOTER */
 
-footer{
+.bottom {
+    display: flex;
+    flex-direction: column;
+    background: gainsboro;
+}
+
+.googlemaps {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -532,24 +541,42 @@ footer{
 }
 
 .social-media-container {
+    background-color: var(--dark-color);
+    color: var(--light-color);
     display: inline-block;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    width: 100%;
+}
+
+.social-media-container h3 {
+    text-align: center;
+}
+
+.media-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-brands {
     margin: 1rem;
+    flex-direction: row;
     padding: 1rem;
-    color: var(--dark-color);
+    color: var(--light-color);
+}
+
+hr {
+    color: #000000;
 }
 
 
-
 .cardDesktop {
-        display: none;
-        
-    }
+    display: none;
+
+}
+
 /* VERSION DESKTOP ! */
 
 @media screen and (min-width: 1200px) {
@@ -627,13 +654,14 @@ footer{
         border-radius: 20px;
         border: none;
     }
+
     /*------END NAVBAR------*/
 
 
     /*--------SERVICE SECTION--------*/
 
-    #wrapper{
-       display: none; 
+    #wrapper {
+        display: none;
     }
 
     .services-section h4,
@@ -666,7 +694,7 @@ footer{
     }
 
     #image-carousel {
-        visibility:visible ;
+        visibility: visible;
     }
 
     .cardSliderSingle img {
@@ -688,7 +716,7 @@ footer{
         font-weight: bold;
         letter-spacing: 1px;
         text-decoration: none;
-    }                            
+    }
 
     #p {
         margin-top: 20px;
@@ -697,7 +725,8 @@ footer{
     #Btnnn {
         margin-top: 50px;
     }
-/*--------END SERVICE SECTION--------*/
+
+    /*--------END SERVICE SECTION--------*/
     .lunch {
 
         display: flex;
@@ -735,7 +764,7 @@ footer{
         color: black;
     }
 
-  /*--------Diner----------------*/
+    /*--------Diner----------------*/
 
     .diner {
         display: flex;
@@ -776,7 +805,7 @@ footer{
         color: black;
     }
 
-    
+
     /*-------- End Diner----------------*/
 
     .brunch {
@@ -794,7 +823,7 @@ footer{
         width: 1350px;
         margin: 0 auto;
         font-size: 40px;
-        padding-top: 200px;
+        padding-top: 20px;
         margin-bottom: 140px;
     }
 
@@ -826,21 +855,24 @@ footer{
         margin: 0 auto;
         font-size: 40px;
         padding-top: 60px;
-        padding-right: 60px;
-        margin-bottom: 180px;
+        padding-right: 20px;
+        margin-bottom: 100px;
     }
 
 
 
     .winecellartext h3 {
         color: white;
+        background: none;
     }
 
     .winecellartext p {
         color: white;
+        background: none;
     }
 
     .winecellartext a {
+        background: none;
         color: white;
         text-shadow: 0 0 6px black;
         font-size: 30px;
@@ -856,7 +888,7 @@ footer{
         margin: 0 auto;
         font-size: 40px;
         padding-top: 20px;
-        padding-right: 60px;
+        padding-right: 10px;
         margin-bottom: 100px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -936,6 +968,18 @@ footer{
         gap: 30px;
         color: var(--dark-color);
 
+    }  
+
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        background: var(--medium-color);
+        align-items: center;
+        gap: 30px;
+    }
+
+    .googlemaps {
+        margin-left: 100px;
     }
 
     .infos-left {
@@ -951,7 +995,7 @@ footer{
 
     .btn-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
     }
 
@@ -975,12 +1019,14 @@ footer{
         visibility: hidden;
     }
 
+    .fingerRight{
+        visibility: visible;
+    }
+
     .infos-right {
         margin-top: 30px;
         margin-bottom: 15px;
     }
 
 
-
 }
-

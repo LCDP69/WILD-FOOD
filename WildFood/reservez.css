@@ -1,0 +1,62 @@
+:root {
+    --primaryfont: 'Radley', serif;
+    --dark-color: #000000;
+    --medium-color: #D9D9D9;
+    --light-color: #f5f5f5;
+    --intermediate-color: #5B5458;
+}
+
+body {
+    font-family: var(--primaryfont);
+    background: url(img/bar-498420_1280.jpg) center/cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 318px;
+}
+
+#numberofpeople p {
+    color: white;
+    background: #000000;
+    text-align: center;
+}
+
+
+h3 {
+    color: var(--light-color);
+    font-size: 24px;
+    background: black;
+}
+
+h4 {
+    color: var(--light-color);
+    font-size: 17px;
+    background: black;
+}
+
+.booking form {
+    display: flex;
+    flex-direction: column;
+}
+
+.a {
+    margin-top: 20px;
+    font-size: 2dvb;
+}
+
+.a a {
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+
+    .booking {
+        margin-top: 200px;
+    }
+}
