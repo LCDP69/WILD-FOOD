@@ -503,7 +503,10 @@ footer {
     text-decoration: none;
 }
 
-
+.cardDesktop {
+        display: none;
+        
+    }
 /* VERSION DESKTOP ! */
 
 @media screen and (min-width: 1200px) {
@@ -524,6 +527,10 @@ footer {
         position: fixed;
         top: 0;
         width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
     }
 
     .logo {
@@ -918,3 +925,4 @@ footer {
 
 
 }
+

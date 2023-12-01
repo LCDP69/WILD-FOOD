@@ -25,12 +25,12 @@ toggle.addEventListener("click", function () {
 
 const wrapper = document.querySelector('#wrapper')
 const carousel = document.querySelector('#image-carousel')
-const images = document.querySelectorAll('img')
+const images = carousel.querySelectorAll('img')
 const btn = document.querySelectorAll('button')
 const previous = document.querySelector('#prev')
 const nxt = document.querySelector('#next')
 
-
+console.log('images :>> ', images);
 images.forEach((slide, index) => {
     slide.style.left = `${index * 100}%`
 })
@@ -53,11 +53,10 @@ const prev = () => {
         slideImage();
         console.log(counter);
 
-    }
+    } 
 }
 const next = () => {
     if (counter <= (images.length - 2)) {
-
         counter++;
         slideImage();
         console.log(counter);
